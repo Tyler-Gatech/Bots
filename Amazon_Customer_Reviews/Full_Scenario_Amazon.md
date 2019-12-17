@@ -14,13 +14,13 @@ Develop a 2-Step plan to build a good database for further customer analysis.
 2. Using the customer ids from Step 1,  gather a list of products purchased and reviewed by these customers
 
 ## Step 1. Web Scraper - Reviews
-The web scraper is developed using R's rvest package. The [full code, "Amazon_Review_Scraping_Lovery"](/Code) is availble here for the specified product. The scraper compiles a list of all the reviews, reviewers, and other relavant information, by going through each review page on Amazon. You can see the output [here, "reviews_all_df_B075R8BXXC_2019-12-17.RDS"](/Data)
+The web scraper is developed using R's rvest package. The [full code, "Amazon_Review_Scraping_Lovery"](https://github.com/Tyler-Gatech/Bots/tree/master/Amazon_Customer_Reviews/Code) is availble here for the specified product. The scraper compiles a list of all the reviews, reviewers, and other relavant information, by going through each review page on Amazon. You can see the output [here, "reviews_all_df_B075R8BXXC_2019-12-17.RDS"](https://github.com/Tyler-Gatech/Bots/tree/master/Amazon_Customer_Reviews/Data)
 
 ## Step 2. Web Scraper - Other Problems
 Using the customers gathered from the Step 1, you then try to implement a similar solution to scrape each review that the users have left on other products. However, as mentinoed in the Initial Exploration, Amazon has made each customer's review profile load reviews dynamically as the end-user scrolls down. The rvest package can only scrape the reviews that are on the initial view of the web page. 
 
 ## The Solution - Automation Bot
-You need a solution that allows you to scrape the web page information dynamically. In this case, you need to be able to scroll down on the user review page to allow more reviews to load. You decide to create a bot. The bot allows you to control an automated browser (e.g. chrome) and then can scrape the web page as new information loads. This allows you to see and scrape all the information on the web page, just as a human user would see, but obviously much faster. 
+You need a solution that allows you to scrape the web page information dynamically. In this case, you need to be able to scroll down on the user review page to allow more reviews to load. The best solution is a bot. The bot allows you to control an automated browser (e.g. chrome) and then can scrape the web page as new information loads. This allows you to see and scrape all the information on the web page, just as a human user would see, but obviously much faster. 
 
 
 
