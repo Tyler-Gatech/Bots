@@ -14,7 +14,7 @@ Develop a 2-Step plan to build a good database for further customer analysis.
 2. Using the customer ids from Step 1,  gather a list of products purchased and reviewed by these customers
 
 ## Step 1. Web Scraper - Reviews
-The web scraper is developed using R's rvest package. The [full code](Bots/Amazon_Customer_Reviews/Code/Amazon_Review_Scraping_Lovery.R) is availble here for the specified product. The scraper compiles a list of all the reviews, reviewers, and other relavant information, by going through each review page on Amazon. You can see the output [here](Bots/Amazon_Customer_Reviews/Data/)
+The web scraper is developed using R's rvest package. The [full code, "Amazon_Review_Scraping_Lovery"](/Code) is availble here for the specified product. The scraper compiles a list of all the reviews, reviewers, and other relavant information, by going through each review page on Amazon. You can see the output [here, "reviews_all_df_B075R8BXXC_2019-12-17.RDS"](/Data)
 
 ## Step 2. Web Scraper - Other Problems
 Using the customers gathered from the Step 1, you then try to implement a similar solution to scrape each review that the users have left on other products. However, as mentinoed in the Initial Exploration, Amazon has made each customer's review profile load reviews dynamically as the end-user scrolls down. The rvest package can only scrape the reviews that are on the initial view of the web page. 
