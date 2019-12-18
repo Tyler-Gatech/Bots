@@ -124,5 +124,14 @@ for(page_num in 1:loop_pages){
   print(page_num)
 }
 
-saveRDS(reviews_all, paste0("./Desktop/Github/Bots/Amazon Customer Reviews/Data/reviews_all_df_B075R8BXXC", Sys.Date(), ".RDS"))
+saveRDS(reviews_all, paste0("./Desktop/Github/Bots/Amazon_Customer_Reviews/Data/reviews_all_df_B075R8BXXC_", Sys.Date(), ".RDS"))
 
+
+#csv delimited
+write_csv(reviews_all, paste0("./Desktop/Github/Bots/Amazon_Customer_Reviews/Data/reviews_all_df_B075R8BXXC_", Sys.Date(), ".csv"))
+
+#pipe delimited, i.e. |
+write_delim(reviews_all, paste0("./Desktop/Github/Bots/Amazon_Customer_Reviews/Data/reviews_all_df_B075R8BXXC_", Sys.Date(), ".txt"), delim = "|")
+  
+  
+)
